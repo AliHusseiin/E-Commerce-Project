@@ -47,3 +47,24 @@
 .test {
   text-align: center;
 }
+.button-styling {
+  background-color: black;
+  color: #f0f2f5;
+  border: 1px solid;
+}
+.button-styling:link {
+  color: bisque;
+}
+.button-styling:visited {
+  color: bisque;
+  color: rgb(141, 53, 53);
+}
+
+.button-styling:hover {
+  color: bisque;
+  font-size: larger;
+  font-weight: bolder;
+}
+.button-styling:active {
+  color: rgb(141, 53, 53);
+}
