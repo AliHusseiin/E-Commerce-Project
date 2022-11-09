@@ -68,3 +68,8 @@
 .button-styling:active {
   color: rgb(141, 53, 53);
 }
+.test2:hover {
+  font-size: 50px;
+  font-weight: bolder;
+  font-size: ;
+}
