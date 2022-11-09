@@ -25,7 +25,7 @@
   border: 1px solid;
   text-align: center;
   background-color: #2c2c2c;
-  display: block;
+  display: inline-block;
 }
 .description {
   margin: 10px;
@@ -40,4 +40,10 @@
 .Desc-styling {
   margin: 10px;
   padding: 10px;
+}
+.body-styling {
+  padding: auto 2px;
+}
+.test {
+  text-align: center;
 }
