@@ -96,6 +96,8 @@ li a {
   list-style: none;
   position: relative;
   background-color: white;
+  border: 1px solid wheat;
+  padding: 10px;
 }
 .items > li {
   display: inline-block;
