@@ -29,6 +29,7 @@
 }
 .nav-styling > ul > li > i {
   background-color: #fff;
+  cursor: pointer;
 }
 .sub-header {
   display: flex;
