@@ -50,6 +50,9 @@ li a {
   border: 1px solid wheat;
   background-color: #fff;
 }
+.sub-nav form > button > i {
+  background-color: #fff;
+}
 .sub-nav input {
   /* padding: 5px;
   margin: 5px; */
