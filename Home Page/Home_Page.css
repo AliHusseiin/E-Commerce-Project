@@ -27,6 +27,13 @@
   font-weight: bolder;
   text-decoration: underline;
 }
+.nav-styling > ul > li > i {
+  background-color: #fff;
+}
+.sub-header {
+  display: flex;
+  justify-content: center;
+}
 li a {
   text-decoration: none;
 }
@@ -37,6 +44,7 @@ li a {
   padding: 10px;
   margin: 10px;
   background-color: #fff;
+  gap: 120px;
 }
 .sub-nav form {
   display: flex;
