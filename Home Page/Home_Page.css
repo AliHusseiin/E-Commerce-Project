@@ -62,6 +62,9 @@ li a {
 .sub-nav form > button > i {
   background-color: #fff;
 }
+.sub-nav i {
+  background-color: #fff;
+}
 .sub-nav input {
   /* padding: 5px;
   margin: 5px; */
