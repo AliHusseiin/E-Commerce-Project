@@ -58,16 +58,21 @@ li a {
   justify-content: space-around;
   border: 1px solid wheat;
   background-color: #fff;
+  display: flex;
+}
+.items {
+  background-color: #fff;
+  display: flex;
 }
 .menue .items {
   display: flex;
   height: fit-content;
   justify-content: space-evenly;
-  padding: 10px;
 }
 .items li {
   list-style: none;
   position: relative;
+  background-color: white;
 }
 .items > li {
   display: inline-block;
@@ -79,6 +84,9 @@ li a {
   position: absolute;
   background-color: #fff;
   border: 1px solid wheat;
+  right: 0%;
+  top: 45px;
+  padding: 10px;
 }
 .items li:hover {
   background-color: #818181;
@@ -86,4 +94,8 @@ li a {
 }
 .items li:hover ul {
   display: block;
+}
+.sub-items {
+  border: 1px solid wheat;
+  padding: 10px;
 }
