@@ -40,6 +40,7 @@ li a {
 }
 .sub-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   border: 1px solid wheat;
   padding: 10px;
@@ -90,6 +91,7 @@ li a {
 }
 .items {
   background-color: #fff;
+  display: flex;
 }
 .menue .items {
   display: flex;
