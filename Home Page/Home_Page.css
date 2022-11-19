@@ -84,10 +84,9 @@ li a {
   text-decoration: underline;
 }
 .menue {
-  justify-content: space-around;
-  border: 1px solid wheat;
-  background-color: #fff;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .items {
   background-color: #fff;
