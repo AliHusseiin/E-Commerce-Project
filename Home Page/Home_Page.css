@@ -44,7 +44,7 @@ li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 1px solid wheat;
+  border: 1px solid #1098ad;
   padding: 10px;
   margin: 10px;
   background-color: #fff;
@@ -60,7 +60,7 @@ li a {
   border-radius: 0px;
   padding: 0.375rem 0.75rem;
   font-weight: 400;
-  border: 1px solid wheat;
+  border: 1px solid #1098ad;
   background-color: #fff;
 }
 .sub-nav form > button > i {
@@ -73,7 +73,7 @@ li a {
 .sub-nav input {
   /* padding: 5px;
   margin: 5px; */
-  border-color: wheat;
+  border-color: #1098ad;
 }
 .sub-nav a {
   text-decoration: none;
@@ -104,19 +104,19 @@ li a {
   list-style: none;
   position: relative;
   background-color: white;
-  border: 1px solid wheat;
+  border: 1px solid #1098ad;
   padding: 10px;
 }
 .items > li {
   display: inline-block;
   padding: 15px 20px;
-  border: 1px solid wheat;
+  border: 1px solid #1098ad;
 }
 .items ul {
   display: none;
   position: absolute;
   background-color: #fff;
-  border: 1px solid wheat;
+  border: 1px solid #1098ad;
   left: 0%;
   top: 100%;
   padding: 10%;
