@@ -122,7 +122,8 @@ li a {
   padding: 10%;
 }
 .items li:hover {
-  background-color: #818181;
+  background-color: #1098ad;
+  color: white;
   cursor: pointer;
 }
 .items li:hover ul {
