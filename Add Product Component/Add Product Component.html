@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Product Component</title>
+    <link rel="stylesheet" href="../Home Page/Home_Page.css" />
+    <link rel="stylesheet" href="../Add Product Component/cart.css" />
+    <link
+      href="../fontawesome-free-6.2.0-web/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- A nav bar for about and FAQs and contacts -->
+      <nav>
+        <div class="nav-styling">
+          <ul>
+            <li><a href="#"> About </a></li>
+            <li><a href="#"> FAQs </a></li>
+            <li>
+              <a href="#"> Contacts </a><i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Making logo, search and registering bar -->
+      <section class="sub-header">
+        <div class="sub-nav">
+          <a href="#">Home <i class="fa-solid fa-house"></i></a>
+          <form action="/Product Description/index.html">
+            <input type="text" placeholder="Search for your Book" />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <a href="#">
+            <span><i class="fa-solid fa-user"></i> Login / Regiter </span>
+          </a>
+        </div>
+      </section>
+      <!-- Makeing a menue bar -->
+      <section class="menue">
+        <ul class="items">
+          <li>
+            Software Engineering
+
+            <ul class="sub-items">
+              <li>Algorithms</li>
+              <li>Data Stracture</li>
+              <li>Design Patterns</li>
+              <li>Object-Orianted Programming</li>
+              <li>Computer Science</li>
+            </ul>
+          </li>
+          <li>
+            Technology
+
+            <ul>
+              <li>HTML & CSS</li>
+              <li>Javascript</li>
+              <li>.NET</li>
+              <li>Angulr</li>
+              <li>AWS</li>
+            </ul>
+          </li>
+
+          <li>
+            Ai & Data Science
+
+            <ul>
+              <li>Deep Learning</li>
+              <li>Statistics</li>
+              <li>MATH</li>
+              <li>Machine Learning</li>
+              <li>Big Data</li>
+            </ul>
+          </li>
+
+          <li>
+            DevOps & Cloud
+
+            <ul>
+              <li>Cloud</li>
+              <li>Amazon AWS</li>
+              <li>Microsoft Azure</li>
+              <li>Google Cloud</li>
+              <li>Docker</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </header>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>
+            <input type="text" id="product-name" placeholder="Product Name" />
+          </th>
+          <th><input type="text" id="price" placeholder="Price" /></th>
+          <th>
+            <input type="text" id="quantity" placeholder="Quantity" />
+          </th>
+          <th colspan="2"><button id="add">Add</button></th>
+        </tr>
+        <tr>
+          <th>Products</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="products"></tbody>
+    </table>
+    <script src="../Add Product Component/cart.js"></script>
+  </body>
+</html>
