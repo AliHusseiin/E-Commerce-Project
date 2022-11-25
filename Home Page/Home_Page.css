@@ -129,3 +129,10 @@ li a {
 .items li:hover ul {
   display: block;
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 768px) {
+}
