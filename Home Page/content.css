@@ -29,30 +29,18 @@ section h3 {
   column-gap: 30px;
   row-gap: 30px;
 }
-.main div {
-  background-color: #1098ad41;
-}
-.img-styling {
-  width: 400px;
-  height: 500px;
-  border: 1px solid black;
-}
+
 .img-styling1 {
-  width: 150px;
-  height: 200px;
-  border: 1px solid black;
-}
-.main .img-styling1 {
   transition: 1.5s;
 }
-.main .img-styling1:hover {
+.img-styling1:hover {
   transform: rotate(8deg) scale(1.3);
   cursor: pointer;
 }
-.main .img-styling {
+.img-styling {
   transition: 1.5s;
 }
-.main .img-styling:hover {
+.img-styling:hover {
   transition: 2.5s;
   transform: scale(1.3);
   cursor: pointer;

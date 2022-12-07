@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
       href="../fontawesome-free-6.2.0-web/css/all.min.css"
       rel="stylesheet"
     />
@@ -40,7 +46,7 @@
           </form>
 
           <a href="../Add Product Component/Add Product Component.html"
-            >Cart <i class="fa-solid fa-cart-shopping"></i
+            >Shopping Cart <i class="fa-solid fa-cart-shopping"></i
           ></a>
           <a href="#">
             <span><i class="fa-solid fa-user"></i> Login / Regiter </span>
@@ -100,35 +106,392 @@
       </section>
     </header>
     <section><h3>Collections</h3></section>
-    <div class="main">
-      <div>
-        <img
-          class="img-styling"
-          src="../imgs/Grokking Algo 1.jpg"
-          alt="Book img"
-        />
-      </div>
-      <div>
-        <img class="img-styling1" src="../imgs/app.jpg" alt="Book" />
-        <img class="img-styling1" src="../imgs/system.jpg" alt="" />
-        <img class="img-styling1" src="../imgs/js.jpg" alt="Book" />
-        <img class="img-styling1" src="../imgs/ps.jpg" alt="Book" />
+    <div class="container-fluid pt-5 pb-3">
+      <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
+        <span class="bg-secondary pr-3">Featured Products</span>
+      </h2>
+      <div class="row px-xl-5">
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+          <div class="product-item bg-light mb-4">
+            <div class="product-img position-relative overflow-hidden">
+              <img
+                class="img-styling1 img-fluid w-100"
+                src="../imgs/Grokking Algo 1.jpg"
+                alt=""
+              />
+              <div class="product-action">
+                <a
+                  class="btn btn-outline-dark btn-square"
+                  href="#"
+                  onclick="addSingleProductToCart({id:1,productName:'Grokking Algorithms',price:100})"
+                  ><i class="fa fa-shopping-cart"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href="#"
+                  ><i class="far fa-heart"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href="#"
+                  ><i class="fa fa-sync-alt"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href="#"
+                  ><i class="fa fa-search"></i
+                ></a>
+              </div>
+            </div>
+            <div class="text-center py-4">
+              <a class="h6 text-decoration-none text-truncate" href=""
+                >Product Name Goes Here</a
+              >
+              <div
+                class="d-flex align-items-center justify-content-center mt-2"
+              >
+                <h5>$123.00</h5>
+                <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center mb-1"
+              >
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small>(99)</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+          <div class="product-item bg-light mb-4">
+            <div class="product-img position-relative overflow-hidden">
+              <img
+                class="img-styling1 img-fluid w-100"
+                src="../imgs/interview.jpg"
+                alt=""
+              />
+              <div class="product-action">
+                <a
+                  class="btn btn-outline-dark btn-square"
+                  href="#"
+                  onclick="addSingleProductToCart({id:2,productName:' Master interview',price:100})"
+                  ><i class="fa fa-shopping-cart"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="far fa-heart"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-sync-alt"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-search"></i
+                ></a>
+              </div>
+            </div>
+            <div class="text-center py-4">
+              <a class="h6 text-decoration-none text-truncate" href=""
+                >Product Name Goes Here</a
+              >
+              <div
+                class="d-flex align-items-center justify-content-center mt-2"
+              >
+                <h5>$123.00</h5>
+                <h6 class="text-muted ml-2"><del>$140.00</del></h6>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center mb-1"
+              >
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star-half-alt text-primary mr-1"></small>
+                <small>(99)</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+          <div class="product-item bg-light mb-4">
+            <div class="product-img position-relative overflow-hidden">
+              <img
+                class="img-styling1 img-fluid w-100"
+                src="../imgs/data.jpg"
+                alt=""
+              />
+              <div class="product-action">
+                <a
+                  class="btn btn-outline-dark btn-square"
+                  href="#"
+                  onclick="addSingleProductToCart({id:3,productName:'Data Science',price:100})"
+                  ><i class="fa fa-shopping-cart"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="far fa-heart"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-sync-alt"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-search"></i
+                ></a>
+              </div>
+            </div>
+            <div class="text-center py-4">
+              <a class="h6 text-decoration-none text-truncate" href=""
+                >Product Name Goes Here</a
+              >
+              <div
+                class="d-flex align-items-center justify-content-center mt-2"
+              >
+                <h5>$123.00</h5>
+                <h6 class="text-muted ml-2"><del>$150.00</del></h6>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center mb-1"
+              >
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star-half-alt text-primary mr-1"></small>
+                <small class="far fa-star text-primary mr-1"></small>
+                <small>(99)</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+          <div class="product-item bg-light mb-4">
+            <div class="product-img position-relative overflow-hidden">
+              <img
+                class="img-styling1 img-fluid w-100"
+                src="../imgs/design patterns.jpg"
+                alt=""
+              />
+              <div class="product-action">
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-shopping-cart"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="far fa-heart"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-sync-alt"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-search"></i
+                ></a>
+              </div>
+            </div>
+            <div class="text-center py-4">
+              <a class="h6 text-decoration-none text-truncate" href=""
+                >Product Name Goes Here</a
+              >
+              <div
+                class="d-flex align-items-center justify-content-center mt-2"
+              >
+                <h5>$123.00</h5>
+                <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center mb-1"
+              >
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="far fa-star text-primary mr-1"></small>
+                <small class="far fa-star text-primary mr-1"></small>
+                <small>(99)</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+          <div class="product-item bg-light mb-4">
+            <div class="product-img position-relative overflow-hidden">
+              <img
+                class="img-styling1 img-fluid w-100"
+                src="../imgs/cloud.jpg"
+                alt=""
+              />
+              <div class="product-action">
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-shopping-cart"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="far fa-heart"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-sync-alt"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-search"></i
+                ></a>
+              </div>
+            </div>
+            <div class="text-center py-4">
+              <a class="h6 text-decoration-none text-truncate" href=""
+                >Product Name Goes Here</a
+              >
+              <div
+                class="d-flex align-items-center justify-content-center mt-2"
+              >
+                <h5>$123.00</h5>
+                <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center mb-1"
+              >
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small>(99)</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+          <div class="product-item bg-light mb-4">
+            <div class="product-img position-relative overflow-hidden">
+              <img
+                class="img-styling1 img-fluid w-100"
+                src="../imgs/machine.jpg"
+                alt=""
+              />
+              <div class="product-action">
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-shopping-cart"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="far fa-heart"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-sync-alt"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-search"></i
+                ></a>
+              </div>
+            </div>
+            <div class="text-center py-4">
+              <a class="h6 text-decoration-none text-truncate" href=""
+                >Product Name Goes Here</a
+              >
+              <div
+                class="d-flex align-items-center justify-content-center mt-2"
+              >
+                <h5>$123.00</h5>
+                <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center mb-1"
+              >
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star-half-alt text-primary mr-1"></small>
+                <small>(99)</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+          <div class="product-item bg-light mb-4">
+            <div class="product-img position-relative overflow-hidden">
+              <img
+                class="img-styling1 img-fluid w-100"
+                src="../imgs/php.jpg"
+                alt=""
+              />
+              <div class="product-action">
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-shopping-cart"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="far fa-heart"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-sync-alt"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-search"></i
+                ></a>
+              </div>
+            </div>
+            <div class="text-center py-4">
+              <a class="h6 text-decoration-none text-truncate" href=""
+                >Product Name Goes Here</a
+              >
+              <div
+                class="d-flex align-items-center justify-content-center mt-2"
+              >
+                <h5>$123.00</h5>
+                <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center mb-1"
+              >
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star-half-alt text-primary mr-1"></small>
+                <small class="far fa-star text-primary mr-1"></small>
+                <small>(99)</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+          <div class="product-item bg-light mb-4">
+            <div class="product-img position-relative overflow-hidden">
+              <img
+                class="img-styling1 img-fluid w-100"
+                src="../imgs/ps.jpg"
+                alt=""
+              />
+              <div class="product-action">
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-shopping-cart"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="far fa-heart"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-sync-alt"></i
+                ></a>
+                <a class="btn btn-outline-dark btn-square" href=""
+                  ><i class="fa fa-search"></i
+                ></a>
+              </div>
+            </div>
+            <div class="text-center py-4">
+              <a class="h6 text-decoration-none text-truncate" href=""
+                >Product Name Goes Here</a
+              >
+              <div
+                class="d-flex align-items-center justify-content-center mt-2"
+              >
+                <h5>$123.00</h5>
+                <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center mb-1"
+              >
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="fa fa-star text-primary mr-1"></small>
+                <small class="far fa-star text-primary mr-1"></small>
+                <small class="far fa-star text-primary mr-1"></small>
+                <small>(99)</small>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <section><h3>Popular</h3></section>
-    <div class="main">
-      <div>
-        <img class="img-styling" src="../imgs/data.jpg" alt="Book" />
-        <!-- <img class="img-styling" src="../imgs/design patterns.jpg" alt="Book" /> -->
-      </div>
 
-      <div>
-        <img class="img-styling1" src="../imgs/distrubted.jpg" alt="Book" />
-        <img class="img-styling1" src="../imgs/51xUZItrHJL.jpg" alt="Book" />
-        <img class="img-styling1" src="../imgs/azure.jpg" alt="Book" />
-        <img class="img-styling1" src="../imgs/cloud.jpg" alt="Book" />
-      </div>
-    </div>
     <footer>&copy; Copyright for this Website</footer>
+    <script src="../Home Page/home.js"></script>
   </body>
 </html>

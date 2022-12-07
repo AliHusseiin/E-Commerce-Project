@@ -127,6 +127,7 @@ li a {
   cursor: pointer;
 }
 .items li:hover ul {
+  z-index: 5;
   display: block;
 }
 
