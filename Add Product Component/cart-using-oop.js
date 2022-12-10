@@ -1,7 +1,6 @@
 class Order {
   orderDetails;
   user;
-  paymentMethod;
 
   constructor() {
     this.orderDetails = [];
@@ -113,8 +112,8 @@ class OrderDetail {
     return `  
     <tr>
     <td class="align-middle">
-      <img src="${this.product.productName}" alt="" style="width: 50px" />
-      ${this.product.productName}
+      <img src="${this.product.name}" alt="" style="width: 50px" />
+      ${this.product.name}
     </td>
     <td class="align-middle">$${this.price}</td>
     <td class="align-middle">
