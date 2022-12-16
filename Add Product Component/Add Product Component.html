@@ -37,13 +37,20 @@
       <!-- Making logo, search and registering bar -->
       <section class="sub-header">
         <div class="sub-nav">
-          <a href="../Home Page/Home_Page.html"
+          <a href="/Home Page/Home_Page.html"
             >Home <i class="fa-solid fa-house"></i
           ></a>
           <form action="/Product Description/index.html">
             <input type="text" placeholder="Search for your Book" />
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
+
+          <a href="/Add Product Component/Add Product Component.html"
+            >Shopping Cart <i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="/Add Product Component/checkout/checkout.html"
+            >Checkout <i class="fa-solid fa-cart-shopping"></i
+          ></a>
           <a href="#">
             <span><i class="fa-solid fa-user"></i> Login / Regiter </span>
           </a>
@@ -331,9 +338,15 @@
                 <h5 id="total"></h5>
               </div>
               <button
+                id="proceed-btn"
                 class="btn btn-block btn-primary font-weight-bold my-3 py-3"
               >
-                Proceed To Checkout
+                <a
+                  style="text-decoration: none"
+                  class="btn btn-block btn-primary font-weight-bold my-3 py-3"
+                  href="/Add Product Component/checkout/checkout.html"
+                  >Proceed To Checkout</a
+                >
               </button>
             </div>
           </div>
@@ -341,7 +354,9 @@
       </div>
     </div>
 
-    <!-- <script src="../Add Product Component/cart.js"></script> -->
-    <script src="../Add Product Component/cart-using-oop.js"></script>
+    <script src="../Add Product Component/cart.js"></script>
+    <script src="/Add Product Component/Api.js"></script>
+    <script src="/Add Product Component/checkout/checkout.js"></script>
+    <!-- <script src="../Add Product Component/cart-using-oop.js"></script> -->
   </body>
 </html>

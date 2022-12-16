@@ -48,6 +48,9 @@
           <a href="../Add Product Component/Add Product Component.html"
             >Shopping Cart <i class="fa-solid fa-cart-shopping"></i
           ></a>
+          <a href="../Add Product Component/checkout/checkout.html"
+            >Checkout <i class="fa-solid fa-cart-shopping"></i
+          ></a>
           <a href="#">
             <span><i class="fa-solid fa-user"></i> Login / Regiter </span>
           </a>
@@ -515,8 +518,67 @@
         </div>
       </div>
     </div>
+    <hr />
+
+    <div class="container-fluid pt-5">
+      <div class="row px-xl-5 pb-3">
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+          <div
+            class="d-flex align-items-center bg-light mb-4"
+            style="padding: 30px"
+          >
+            <h1 class="fa fa-check text-primary m-0 mr-3"></h1>
+            <h5 class="font-weight-semi-bold m-0">Quality Product</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+          <div
+            class="d-flex align-items-center bg-light mb-4"
+            style="padding: 30px"
+          >
+            <h1 class="fa fa-shipping-fast text-primary m-0 mr-2"></h1>
+            <h5 class="font-weight-semi-bold m-0">Free Shipping</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+          <div
+            class="d-flex align-items-center bg-light mb-4"
+            style="padding: 30px"
+          >
+            <h1 class="fas fa-exchange-alt text-primary m-0 mr-3"></h1>
+            <h5 class="font-weight-semi-bold m-0">14-Day Return</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+          <div
+            class="d-flex align-items-center bg-light mb-4"
+            style="padding: 30px"
+          >
+            <h1 class="fa fa-phone-volume text-primary m-0 mr-3"></h1>
+            <h5 class="font-weight-semi-bold m-0">24/7 Support</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid pt-5">
+      <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
+        <span class="bg-secondary pr-3">Categories</span>
+      </h2>
+      <div class="row px-xl-5 pb-3" id="categories-conatiner"></div>
+    </div>
+
+    <div class="container-fluid pt-5 pb-3">
+      <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
+        <span class="bg-secondary pr-3">Featured Products</span>
+      </h2>
+      <div class="row px-xl-5" id="featured-products"></div>
+    </div>
 
     <footer>&copy; Copyright for this Website</footer>
+    <script src="/Add Product Component/cart.js"></script>
+    <script src="/Add Product Component/Api.js"></script>
+    <script src="../Add Product Component/checkout/checkout.js"></script>
     <script src="../Home Page/home.js"></script>
   </body>
 </html>
