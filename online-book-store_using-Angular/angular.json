@@ -25,7 +25,12 @@
               "src/assets/content.css",
               "src/assets/fontawesome-free-6.2.0-web/css/all.min.css"
             ],
-            "scripts": ["src/assets/home.js"]
+            "scripts": [
+              "src/assets/home.js",
+              "src/assets/Api.js",
+              "src/assets/cart.js",
+              "src/assets/checkout.js"
+            ]
           },
           "configurations": {
             "production": {

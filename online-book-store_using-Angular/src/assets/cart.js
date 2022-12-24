@@ -43,8 +43,8 @@ const getProductHTMLRow = (p, i) => {
   return `
   <tr>
     <td class="align-middle"><img src="img/${
-      p.productName
-    }.jpg" alt="" style="width: 50px;"> ${p.productName}</td>
+      p.name
+    }.jpg" alt="" style="width: 50px;"> ${p.name}</td>
     <td class="align-middle">$${p.price}</td>
     <td class="align-middle">
         <div class="input-group quantity mx-auto" style="width: 100px;">
@@ -70,3 +70,25 @@ const getProductHTMLRow = (p, i) => {
 
 const products = JSON.parse(localStorage.getItem("products") || "[]");
 renderHTML();
+const postData = async () => {
+  await fetch(`http://localhost:5000/api/users/login`, {
+    method: "POST",
+    headers: {
+      "x-access-token": "Bearer <token>",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      email: "ramymibrahim@yahoo.com",
+      password: "123456",
+    }),
+  })
+    .then((res) => res.json())
+    //.then((res) => console.log(res))
+    .then((data) => {
+      localStorage.setItem("x-access-token", data.token);
+      localStorage.setItem("userId", data._id);
+      console.log(data.token);
+    });
+};
+
+postData();
