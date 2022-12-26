@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <form>
+        <input
+          class="form-control"
+          formControlName="email"
+          placeholder="enter your email"
+        />
+        <ng-container>
+          <span class="text-danger">Please enter your email</span>
+          <span class="text-danger">Please enter a valid email address</span>
+        </ng-container>
+        <input
+          class="form-control"
+          type="password"
+          formControlName="password"
+          placeholder="enter your password"
+        />
+        <ng-container>
+          <span class="text-danger">Please enter a your password</span>
+        </ng-container>
+        <button class="btn btn-success btn-block" type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</div>

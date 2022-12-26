@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Signup</h1>
+      <div class="alert alert-danger alert-block"></div>
+      <form>
+        <input
+          class="form-control"
+          placeholder="First Name"
+          formControlName="first_name"
+        />
+        <span class="text-danger">Please enter a valid name</span>
+        <input
+          class="form-control"
+          placeholder="Last Name"
+          formControlName="last_name"
+        />
+        <span class="text-danger">Please enter a valid name</span>
+        <input
+          class="form-control"
+          placeholder="Email"
+          formControlName="email"
+        />
+        <span class="text-danger">Please enter a valid email</span>
+        <input
+          class="form-control"
+          placeholder="Password"
+          formControlName="password"
+          type="password"
+        />
+        <span class="text-danger">Please enter a valid password</span>
+        <input
+          class="form-control"
+          placeholder="Password Confirm"
+          formControlName="password_confirm"
+          type="password"
+        />
+        <span class="text-danger">Password and Confirmation don't match</span>
+        <button class="btn btn-success btn-block">Register</button>
+      </form>
+    </div>
+  </div>
+</div>
