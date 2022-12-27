@@ -82,10 +82,8 @@ export class HomeComponent {
   getLikeNumber() {
     this.storageService.getLikesNumber();
   }
-  getFromLocalStorage() {
-    return localStorage.getItem('products') || '[]';
-  }
-  addToCart(index: number, quantity: number) {
+
+  addToCart(index: number) {
     if (this.product[index].quantity > 0) {
       this.product[index].quantity++;
       return (

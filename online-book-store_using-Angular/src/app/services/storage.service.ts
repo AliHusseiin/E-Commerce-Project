@@ -25,4 +25,7 @@ export class StorageService {
   getTotalLikes() {
     return localStorage.getItem('likes') || 0;
   }
+  getFromLocalStorage(): Product[] {
+    return JSON.parse(localStorage.getItem('products') || '[]');
+  }
 }
