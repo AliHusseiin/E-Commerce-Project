@@ -7,6 +7,7 @@ import { Product } from '../interfaces/product';
 export class StorageService {
   heart: number = 0;
   cart: number = 0;
+  products: Product[] = [];
 
   constructor() {}
 
@@ -27,5 +28,8 @@ export class StorageService {
   }
   getFromLocalStorage(): Product[] {
     return JSON.parse(localStorage.getItem('products') || '[]');
+  }
+  setToLocalStorage() {
+    return localStorage.setItem('products', JSON.stringify(this.products));
   }
 }

@@ -37,6 +37,7 @@
                     type="button"
                     class="decBtn btn btn-sm btn-primary btn-minus"
                     (click)="decQuantity(product.index)"
+                    (click)="set()"
                   >
                     <i class="fa fa-minus"></i>
                   </button>
@@ -51,6 +52,7 @@
                     type="button"
                     class="incBtn btn btn-sm btn-primary btn-plus"
                     (click)="incQuantity(product.index)"
+                    (click)="set()"
                   >
                     <i class="fa fa-plus"></i>
                   </button>
@@ -65,6 +67,7 @@
                 class="btn btn-sm btn-danger"
                 type="button"
                 (click)="remove(i)"
+                (click)="set()"
               >
                 <i class="fa fa-times"></i>
               </button>

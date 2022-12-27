@@ -75,6 +75,7 @@ export class HomeComponent {
     },
   ];
   products: Product[] = [];
+  constructor(private storageService: StorageService) {}
   setCart() {
     this.storageService.setCartNumber();
   }
@@ -100,6 +101,4 @@ export class HomeComponent {
       );
     }
   }
-
-  constructor(private storageService: StorageService) {}
 }

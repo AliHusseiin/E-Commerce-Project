@@ -13,6 +13,7 @@ export class CartComponent {
   cart: Product[] = [];
   constructor(private storageService: StorageService) {
     this.cart = this.storageService.getFromLocalStorage();
+    this.storageService.setToLocalStorage();
   }
 
   incQuantity(i: number) {
@@ -37,5 +38,8 @@ export class CartComponent {
   }
   getShipping(): number {
     return this.cart.map((x) => x.quantity).reduce((a, v) => (a += v), 0) * 2;
+  }
+  set() {
+    return localStorage.setItem('products', JSON.stringify(this.cart));
   }
 }
