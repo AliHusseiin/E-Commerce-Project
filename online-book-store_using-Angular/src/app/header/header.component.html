@@ -46,9 +46,15 @@
       <a routerLink="checkout"
         >Checkout <i class="fa-solid fa-cart-shopping"></i
       ></a>
-      <span>
+      <span *ngIf="!authService.getIsAuthenticated()">
         <a routerLink="login"> <i class="fa-solid fa-user"></i> Login </a>/
         <a routerLink="signup"> <i class="fa-solid fa-user"></i> signup </a>
+      </span>
+      <span class="signout" *ngIf="authService.getIsAuthenticated()">
+        <a routerLink="checkout">
+          <i class="fa-solid fa-user"></i> {{ authService.getName() }} </a
+        >/
+        <a (click)="signOut()"> <i class="fa-solid fa-user"></i> signout </a>
       </span>
     </div>
   </section>

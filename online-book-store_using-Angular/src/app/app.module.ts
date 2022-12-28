@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { CartComponent } from './cart/cart.component';
 import { AuthModule } from './auth/auth.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { AuthModule } from './auth/auth.module';
     CheckoutComponent,
     CartComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, AuthModule],
+  imports: [BrowserModule, AppRoutingModule, AuthModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

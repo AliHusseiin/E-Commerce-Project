@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../services/auth';
 import { StorageService } from '../services/storage.service';
 
 @Component({
@@ -7,5 +8,11 @@ import { StorageService } from '../services/storage.service';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  constructor(public storageService: StorageService) {}
+  constructor(
+    public storageService: StorageService,
+    public authService: AuthService
+  ) {}
+  signOut() {
+    this.authService.signOut();
+  }
 }
