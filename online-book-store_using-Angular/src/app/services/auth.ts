@@ -8,19 +8,19 @@ import { environment } from 'environment/environment';
 })
 export class AuthService {
   constructor(private httpClient: HttpClient, private router: Router) {}
-  login(loginData: any) {
-    return this.httpClient.post(`${environment.apiUrl}users/login`, loginData);
+  login(LogInfo: any) {
+    return this.httpClient.post(`${environment.apiUrl}users/login`, LogInfo);
   }
 
   register(data: any) {
     return this.httpClient.post(`${environment.apiUrl}users/register`, data);
   }
-  saveLoginData(loginData: any) {
-    localStorage.setItem('loginData', JSON.stringify(loginData));
+  saveLogInfo(LogInfo: any) {
+    localStorage.setItem('loginInfo', JSON.stringify(LogInfo));
   }
 
-  getLoginData() {
-    return JSON.parse(localStorage.getItem('loginData') || '{}');
+  getLogInfo() {
+    return JSON.parse(localStorage.getItem('loginInfo') || '{}');
   }
 
   getIsAuthenticated(): boolean {
@@ -28,17 +28,27 @@ export class AuthService {
   }
 
   getToken() {
-    return this.getLoginData()?.token;
+    return this.getLogInfo()?.token;
   }
 
   getName() {
-    return `${this.getLoginData()?.first_name}_${
-      this.getLoginData()?.last_name
-    }`;
+    return `${this.getLogInfo()?.first_name}_${this.getLogInfo()?.last_name}`;
   }
 
   signOut() {
-    localStorage.removeItem('loginData');
+    localStorage.removeItem('LogInfo');
     this.router.navigate(['/home']);
+  }
+  getId() {
+    return this.getLogInfo()?._id;
+  }
+  postInfo(data: any) {
+    console.log(data);
+    return this.httpClient.post(`${environment.apiUrl}orders/`, data, {
+      headers: {
+        'Content-Type': 'application/json',
+        'x-access-token': this.getToken(),
+      },
+    });
   }
 }

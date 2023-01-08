@@ -18,7 +18,7 @@ export class LoginComponent {
     if (this.loginForm.valid) {
       this.authService.login(this.loginForm.value).subscribe(
         (data: any) => {
-          this.authService.saveLoginData(data);
+          this.authService.saveLogInfo(data);
           this.router.navigate(['/home']);
         },
         (error: any) => {

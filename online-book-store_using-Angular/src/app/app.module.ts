@@ -9,6 +9,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { CartComponent } from './cart/cart.component';
 import { AuthModule } from './auth/auth.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,14 @@ import { HttpClientModule } from '@angular/common/http';
     CheckoutComponent,
     CartComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, AuthModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    AuthModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
